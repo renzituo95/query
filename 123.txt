@@ -1,0 +1,1 @@
+echo "点击右上角的New project，填写完成后点击Createt project。新建一个仓库，点击Activity，点击SSH后复制SSH边上栏里的地址。"
