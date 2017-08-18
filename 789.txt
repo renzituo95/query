@@ -1,0 +1,10 @@
+发布分支
+	从develop分支创建，用于预发布版本，允许小bug修复，完成后要合并回develop和master。
+	操作过程：
+	git checkout -b release-1.2 develop，创建一个发布分支
+	git checkout master，切换到master分支，准备合并
+	git merge --no-ff release-1.2，把release-1.2分支合并到master分支
+	git tag 1.2，从master分支打一个标签
+	git checkout develop，切换到develop分支，准备合并
+	git merge --no-ff release-1.2，把release-1.2分支合并到develop分支
+	git branch -d release-1.2，删除这个发布分支
