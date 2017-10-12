@@ -1,4 +1,4 @@
 image: python
-scritp:
+script:
   - python helloworld.py
   - echo "Build has been completed."
